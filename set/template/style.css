@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* ================
+
+レイアウトの設定
+
+================ */
+
+/* ここから */
+.grid {
+    display: grid;
+    grid-template-areas:
+        "text main main side"
+        "sub1 sub1 sub2 side";
+    grid-template-columns: 20% 20% auto 200px;
+    grid-template-rows: 360px 180px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.item1 {
+    grid-area: text;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.item3 {
+    grid-area: side;
+}
+
+.item4 {
+    grid-area: sub1;
+}
+
+.item5 {
+    grid-area: sub2;
+}
+
+@media (width <= 768px) {
+    .grid {
+        grid-template-columns: 20% 20% auto;
+        grid-template-rows: 360px 180px 180px;
+    }
+
+    .item1 {
+        grid-row: 1 / -1;
+    }
+
+    .item3 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+
+    }
+
+    .item4 {
+        grid-column: 2/3;
+    }
+}
+/* ここまで */
