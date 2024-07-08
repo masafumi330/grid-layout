@@ -40,22 +40,12 @@
 
 @media (width <= 768px) {
     .grid {
-        grid-template-columns: 20% 20% auto;
+        grid-template-areas:
+            "text main main"
+            "text sub1 side"
+            "text sub1 sub2";
+        grid-template-columns: 20% 30% auto;
         grid-template-rows: 360px 180px 180px;
-    }
-
-    .item1 {
-        grid-row: 1 / -1;
-    }
-
-    .item3 {
-        grid-column: 2/4;
-        grid-row: 3/4;
-
-    }
-
-    .item4 {
-        grid-column: 2/3;
     }
 }
 /* ここまで */
