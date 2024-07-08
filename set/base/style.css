@@ -37,6 +37,27 @@
 
 .item5 {
     grid-column: 3/4;
-    grid-row: 2/3; */
+    grid-row: 2/3;
+}
+
+@media (width <= 768px) {
+    .grid {
+        grid-template-columns: 20% 20% auto;
+        grid-template-rows: 360px 180px 180px;
+    }
+
+    .item1 {
+        grid-row: 1 / -1;
+    }
+
+    .item3 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+
+    }
+
+    .item4 {
+        grid-column: 2/3;
+    }
 }
 /* ここまで */
