@@ -11,6 +11,8 @@
     display: grid;
     gap: 4px;
     align-content: start;
+    justify-items: center;
+    font-size: 12px
 }
 
 .horizontal {
@@ -45,6 +47,19 @@
 .home-horizontal:hover {
     background-color: #d5dbe3;
 }
+
+.menu {
+    display: grid;
+    gap: 4px;
+    align-content: start;
+
+    & a {
+        &:hover {
+            background-color: #d5dbe3;
+        }
+    }
+}
+
 @media (width <= 768px) {
     .horizontal {
         grid-template-columns: auto auto;
