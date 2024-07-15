@@ -29,7 +29,20 @@
     font-size: 24px;
 }
 
+.home-horizontal {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 4px;
+    font-size: 24px
+}
+
 .home:hover {
+    background-color: #d5dbe3;
+}
+
+.home-horizontal:hover {
     background-color: #d5dbe3;
 }
 @media (width <= 768px) {
