@@ -21,6 +21,17 @@
     justify-content: start;
 }
 
+
+.home {
+    display: grid;
+    justify-items: center;
+    justify-content: start;
+    font-size: 24px;
+}
+
+.home:hover {
+    background-color: #d5dbe3;
+}
 @media (width <= 768px) {
     .horizontal {
         grid-template-columns: auto auto;
